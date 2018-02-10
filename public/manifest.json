@@ -44,7 +44,7 @@
   "scope": ".",
   "display": "standalone",
   "orientation": "portrait-primary",
-  "background_color": "#ffffff",
+  "background_color": "#262626",
   "theme_color": "#5f4b8b",
   "description": "A simple Instagram Clone, with Gani Prayoga's Learning of Progressive Web Apps.",
   "dir": "ltr",

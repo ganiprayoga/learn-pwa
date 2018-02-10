@@ -2,34 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5ee9047-5a7c-441c-a01b-3da37faa74f7" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/public/sw.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/help/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/help/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/src/images/icons/app-icon-144x144.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/src/images/icons/app-icon-192x192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/src/images/icons/app-icon-256x256.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/src/images/icons/app-icon-384x384.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/src/images/icons/app-icon-48x48.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/src/images/icons/app-icon-512x512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/src/images/icons/app-icon-96x96.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/src/images/icons/apple-icon-114x114.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/src/images/icons/apple-icon-114x114.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/src/images/icons/apple-icon-120x120.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/src/images/icons/apple-icon-120x120.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/src/images/icons/apple-icon-144x144.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/src/images/icons/apple-icon-144x144.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/src/images/icons/apple-icon-152x152.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/src/images/icons/apple-icon-152x152.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/src/images/icons/apple-icon-180x180.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/src/images/icons/apple-icon-180x180.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/src/images/icons/apple-icon-57x57.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/src/images/icons/apple-icon-57x57.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/src/images/icons/apple-icon-60x60.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/src/images/icons/apple-icon-60x60.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/src/images/icons/apple-icon-72x72.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/src/images/icons/apple-icon-72x72.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/src/images/icons/apple-icon-76x76.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/src/images/icons/apple-icon-76x76.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/src/images/icons/icon-128x128.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/src/images/icons/icon-144x144.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/src/images/icons/icon-152x152.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/src/images/icons/icon-192x192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/src/images/icons/icon-384x384.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/src/images/icons/icon-512x512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/src/images/icons/icon-72x72.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/src/images/icons/icon-96x96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/src/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/src/js/app.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -42,7 +18,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
@@ -52,11 +28,25 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="sw.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/sw.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="15" column="2" selection-start-line="15" selection-start-column="2" selection-end-line="37" selection-end-column="73" />
+            <state relative-caret-position="496">
+              <caret line="122" column="7" lean-forward="true" selection-start-line="122" selection-start-column="7" selection-end-line="122" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/src/js/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -64,13 +54,13 @@
       <file leaf-file-name="manifest.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/src/images/icons/manifest.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="39" column="2" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="39" selection-end-column="2" />
+            <state relative-caret-position="510">
+              <caret line="34" column="55" lean-forward="true" selection-start-line="34" selection-start-column="55" selection-end-line="34" selection-end-column="55" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/help/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="540">
@@ -82,8 +72,8 @@
       <file leaf-file-name="manifest.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/manifest.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="40" column="3" selection-start-line="40" selection-start-column="3" selection-end-line="40" selection-end-column="3" />
+            <state relative-caret-position="419">
+              <caret line="46" column="24" lean-forward="true" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -111,8 +101,9 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/public/src/images/icons/manifest.json" />
-        <option value="$PROJECT_DIR$/public/manifest.json" />
         <option value="$PROJECT_DIR$/public/help/index.html" />
+        <option value="$PROJECT_DIR$/public/manifest.json" />
+        <option value="$PROJECT_DIR$/public/src/js/app.js" />
       </list>
     </option>
   </component>
@@ -136,7 +127,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -166,24 +156,18 @@
               <item name="learn-pwa" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="learn-pwa" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learn-pwa" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-              <item name="icons" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="SearchEverywhereHistoryKey" value="app.js&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -218,12 +202,13 @@
       <option name="presentableId" value="Default" />
       <updated>1518149255541</updated>
       <workItem from="1518149256749" duration="204000" />
-      <workItem from="1518149531214" duration="6121000" />
+      <workItem from="1518149531214" duration="6505000" />
+      <workItem from="1518222866748" duration="457000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6325000" />
+    <option name="totallyTimeSpent" value="7166000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1310" y="217" width="1272" height="1013" extended-state="0" />
@@ -233,12 +218,12 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32943678" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32943678" />
       <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32943678" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32943678" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -262,10 +247,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/src/images/icons/manifest.json">
+    <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="39" column="2" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="39" selection-end-column="2" />
+        <state relative-caret-position="225">
+          <caret line="15" column="2" selection-start-line="15" selection-start-column="2" selection-end-line="37" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/help/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" column="73" selection-start-line="36" selection-start-column="73" selection-end-line="36" selection-end-column="73" />
         </state>
       </provider>
     </entry>
@@ -276,10 +268,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.html">
+    <entry file="file://$PROJECT_DIR$/public/src/images/icons/manifest.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="15" column="2" selection-start-line="15" selection-start-column="2" selection-end-line="37" selection-end-column="73" />
+        <state relative-caret-position="585">
+          <caret line="39" column="2" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="39" selection-end-column="2" />
         </state>
       </provider>
     </entry>
@@ -287,6 +279,44 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
           <caret line="36" column="73" selection-start-line="36" selection-start-column="73" selection-end-line="36" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/src/images/icons/manifest.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="55" lean-forward="true" selection-start-line="34" selection-start-column="55" selection-end-line="34" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/manifest.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="46" column="24" lean-forward="true" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/sw.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="496">
+          <caret line="122" column="7" lean-forward="true" selection-start-line="122" selection-start-column="7" selection-end-line="122" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/src/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
         </state>
       </provider>
     </entry>
