@@ -1,5 +1,9 @@
 var deferredPrompt;
 
+if (!window.Promise) {
+  window.Promise = Promise
+}
+
 if ('serviceWorker' in navigator)
 {
   navigator.serviceWorker
@@ -42,6 +46,7 @@ fetch('https://httpbin.org/post', {
     'Content-Type': 'application/json',
     'Accept': 'application/json'
   },
+  mode: 'cors',
   body: JSON.stringify({message: "Hope this is work!"})
 })
   .then(function (response) {
