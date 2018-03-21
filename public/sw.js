@@ -5,7 +5,18 @@ self.addEventListener('install', function (event) {
     caches.open('static')
       .then(function (cache) {
         console.log('[Service Worker] Precaching App Shell');
-        cache.add('/src/js/app.js');
+        cache.addAll([
+          '/',
+          '/index.html',
+          '/src/js/app.js',
+          '/src/js/feed.js',
+          '/src/js/promise.js',
+          '/src/js/fetch.js',
+          '/src/js/material.min.js',
+          '/src/css/app.css',
+          '/src/css/feed.css',
+          '/src/images/main-image.jpg'
+        ]);
       })
   )
 });
