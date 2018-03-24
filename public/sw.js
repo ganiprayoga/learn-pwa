@@ -15,7 +15,10 @@ self.addEventListener('install', function (event) {
           '/src/js/material.min.js',
           '/src/css/app.css',
           '/src/css/feed.css',
-          '/src/images/main-image.jpg'
+          '/src/images/main-image.jpg',
+          'https://fonts.googleapis.com/css?family=Roboto:400,700',
+          'https://fonts.googleapis.com/icon?family=Material+Icons',
+          'https://code.getmdl.io/1.3.0/material.purple-yellow.min.css'
         ]);
       })
   )
@@ -33,7 +36,14 @@ self.addEventListener('fetch', function (event) {
         if (response) {
           return response;
         } else {
-          return fetch(event.request);
+          return fetch(event.request)
+            .then(function (res) {
+              return caches.open('dynamic')
+                .then(function (cache) {
+                  cache.put(event.request.url, res.clone());
+                  return res;
+                })
+            });
         }
       })
   );
