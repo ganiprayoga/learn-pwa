@@ -1,9 +1,9 @@
 
-self.addEventListener('install', function (event) {
-  console.log('[Console Worker] Installing Service Worker ...', event);
+self.addEventListener('install', function(event) {
+  console.log('[Service Worker] Installing Service Worker ...', event);
   event.waitUntil(
     caches.open('static')
-      .then(function (cache) {
+      .then(function(cache) {
         console.log('[Service Worker] Precaching App Shell');
         cache.addAll([
           '/',
@@ -24,27 +24,24 @@ self.addEventListener('install', function (event) {
   )
 });
 
-self.addEventListener('activate', function (event) {
-  console.log('[Console Worker] Activating Service Worker ...', event);
+self.addEventListener('activate', function(event) {
+  console.log('[Service Worker] Activating Service Worker ....', event);
   return self.clients.claim();
 });
 
-self.addEventListener('fetch', function (event) {
+self.addEventListener('fetch', function(event) {
   event.respondWith(
     caches.match(event.request)
-      .then(function (response) {
+      .then(function(response) {
         if (response) {
           return response;
         } else {
           return fetch(event.request)
-            .then(function (res) {
+            .then(function(res) {
               return caches.open('dynamic')
-                .then(function (cache) {
+                .then(function(cache) {
                   cache.put(event.request.url, res.clone());
                   return res;
-                })
-                .catch(function (err) {
-
                 })
             });
         }
