@@ -1,6 +1,11 @@
 
-var CACHE_STATIC_NAME = 'static-v4';
-var CACHE_DYNAMIC_NAME = 'dynamic-v2';
+var CACHE_STATIC_NAME   = 'static-v2';
+var CACHE_DYNAMIC_NAME  = 'dynamic-v2';
+var CACHE_NO_CORS       = 'nocors-v2';
+
+var noCORSURL = [
+  'https://code.getmdl.io/1.3.0/material.purple-yellow.min.css'
+];
 
 self.addEventListener('install', function(event) {
   console.log('[Service Worker] Installing Service Worker ...', event);
@@ -20,9 +25,21 @@ self.addEventListener('install', function(event) {
           '/src/css/feed.css',
           '/src/images/main-image.jpg',
           'https://fonts.googleapis.com/css?family=Roboto:400,700',
-          'https://fonts.googleapis.com/icon?family=Material+Icons',
-          'https://code.getmdl.io/1.3.0/material.purple-yellow.min.css'
+          'https://fonts.googleapis.com/icon?family=Material+Icons'
         ]);
+      })
+  );
+  event.waitUntil(
+    caches.open(CACHE_NO_CORS)
+      .then(function (cache) {
+        console.log('[Service Worker] Opened Cache.');
+        cache.addAll(noCORSURL.map(function (url) {
+          console.log(url);
+          // cache.add(url);
+          return new Request(url, {mode: 'no-cors'});
+        })).then(function () {
+          console.log('All Resources have been fetched and Cached');
+        })
       })
   )
 });
@@ -54,7 +71,7 @@ self.addEventListener('fetch', function(event) {
             .then(function(res) {
               return caches.open(CACHE_DYNAMIC_NAME)
                 .then(function(cache) {
-                  cache.put(event.request.url, res.clone());
+                  //cache.put(event.request.url, res.clone());
                   return res;
                 })
             })
