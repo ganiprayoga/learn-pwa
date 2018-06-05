@@ -1,7 +1,7 @@
 
-var CACHE_STATIC_NAME   = 'static-v2';
+var CACHE_STATIC_NAME   = 'static-v7';
 var CACHE_DYNAMIC_NAME  = 'dynamic-v2';
-var CACHE_NO_CORS       = 'nocors-v2';
+var CACHE_NO_CORS       = 'nocors-v3';
 
 var noCORSURL = [
   'https://code.getmdl.io/1.3.0/material.purple-yellow.min.css'
@@ -35,7 +35,7 @@ self.addEventListener('install', function(event) {
         console.log('[Service Worker] Opened Cache.');
         cache.addAll(noCORSURL.map(function (url) {
           console.log(url);
-          // cache.add(url);
+          cache.add(url);
           return new Request(url, {mode: 'no-cors'});
         })).then(function () {
           console.log('All Resources have been fetched and Cached');
