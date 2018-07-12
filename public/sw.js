@@ -2,6 +2,21 @@
 var CACHE_STATIC_NAME   = 'static-v9';
 var CACHE_DYNAMIC_NAME  = 'dynamic-v2';
 var CACHE_NO_CORS       = 'nocors-v3';
+var STATIC_FILES        = [
+  '/',
+  '/index.html',
+  '/offline.html',
+  '/src/js/app.js',
+  '/src/js/feed.js',
+  '/src/js/promise.js',
+  '/src/js/fetch.js',
+  '/src/js/material.min.js',
+  '/src/css/app.css',
+  '/src/css/feed.css',
+  '/src/images/main-image.jpg',
+  'https://fonts.googleapis.com/css?family=Roboto:400,700',
+  'https://fonts.googleapis.com/icon?family=Material+Icons'
+];
 
 var noCORSURL = [
   'https://code.getmdl.io/1.3.0/material.purple-yellow.min.css'
@@ -13,21 +28,7 @@ self.addEventListener('install', function(event) {
     caches.open(CACHE_STATIC_NAME)
       .then(function(cache) {
         console.log('[Service Worker] Precaching App Shell');
-        cache.addAll([
-          '/',
-          '/index.html',
-          '/offline.html',
-          '/src/js/app.js',
-          '/src/js/feed.js',
-          '/src/js/promise.js',
-          '/src/js/fetch.js',
-          '/src/js/material.min.js',
-          '/src/css/app.css',
-          '/src/css/feed.css',
-          '/src/images/main-image.jpg',
-          'https://fonts.googleapis.com/css?family=Roboto:400,700',
-          'https://fonts.googleapis.com/icon?family=Material+Icons'
-        ]);
+        cache.addAll(STATIC_FILES);
       })
   );
   event.waitUntil(
@@ -75,6 +76,10 @@ self.addEventListener('fetch', function(event) {
             })
         })
     );
+  } else if (new RegExp('\\b' + STATIC_FILES.join('\\b|\\b') + '\\b').test(event.request.url)) {
+    event.respondWith(
+      caches.match(event.request)
+    );
   } else {
     event.respondWith(
       caches.match(event.request)
@@ -93,7 +98,9 @@ self.addEventListener('fetch', function(event) {
               .catch(function (err) {
                 return caches.open(CACHE_STATIC_NAME)
                   .then(function(cache) {
-                    return cache.match('/offline.html');
+                    if  (event.request.url.indexOf('/help')) {
+                      return cache.match('/offline.html');
+                    }
                   })
               });
           }
